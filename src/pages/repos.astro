@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+---
+
+<Layout
+	title="Repos"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date("August 08 2021")}
+>
+	<div id="category" style="padding-bottom: 20px;">
+		<div id="category-content">
+			Below you'll find a list of my free open-source repositories. If you
+			find issues or bugs with my software, feel free to open a ticket or
+			write an email to sasiruravihansa@gmail[dot]com.
+		</div>
+	</div>
+	<div class="category">
+		<div id="repo-container">
+			<div class="repo-row">
+				<b>eisberg</b>:
+				<a class="repo-link" href="https://github.com/sasirura/eisberg"
+					>[github]</a
+				>
+				<br /> My university project
+			</div>
+		</div>
+	</div>
+</Layout>

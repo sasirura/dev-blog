@@ -1,0 +1,17 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+const { href, title, pubDate } = Astro.props;
+---
+<div class="category">
+    <div id="category-content">
+        <div class="blog-short">
+            <span class="blog-date">
+                <FormattedDate date={pubDate}/>
+            </span>
+            <div class="blog-link">
+                <a href={href}>
+                    {title}
+                </a>
+            </div>
+        </div>
+    </div>

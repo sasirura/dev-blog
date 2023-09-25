@@ -1,0 +1,26 @@
+---
+title: 'Using MDX'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 02 2022'
+heroImage: '/blog-placeholder-5.jpg'
+---
+import SideNote from '../../components/SideNote.astro';
+
+<SideNote> 
+ <b>Note</b>: A microtask is a short function which is executed after 
+ the function or program which created it exits and only if the
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop#stack">JavaScript execution stack</a>
+    is empty.
+</SideNote>
+
+import CodeSnippet from '../../components/CodeSnippet.astro';
+
+<CodeSnippet> 
+    setTimeout()
+    fetch()
+</CodeSnippet>
+
+import Images from '../../components/Images.astro';
+import Queue from '../../images/microtask-and-callback-queue.jpeg';
+
+<Images src={Queue} alt="microtask and callback queue" />
